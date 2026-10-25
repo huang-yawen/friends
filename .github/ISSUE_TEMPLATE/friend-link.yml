@@ -1,0 +1,52 @@
+name: 友链申请
+  description: 申请与 Elowen's Space 交换友情链接
+  title: "[友链申请] "
+  labels: ["友链申请"]
+  body:
+    - type: markdown
+      attributes:
+        value: |
+          感谢申请！请先在你的网站添加本站友链（信息见 http://101.133.232.20/pages/link ），再填写下面的信息。
+          审核通过后，你的网站会自动出现在友链页。
+    - type: input
+      id: name
+      attributes:
+        label: 站点名称
+        placeholder: 例如：Elowen's Space
+      validations:
+        required: true
+    - type: input
+      id: desc
+      attributes:
+        label: 站点描述
+        description: 一句话介绍，建议 20 字以内
+      validations:
+        required: true
+    - type: input
+      id: url
+      attributes:
+        label: 站点地址
+        placeholder: https://example.com
+      validations:
+        required: true
+    - type: input
+      id: avatar
+      attributes:
+        label: 头像地址
+        description: 图片直链，建议正方形
+        placeholder: https://example.com/avatar.png
+      validations:
+        required: true
+    - type: input
+      id: rss
+      attributes:
+        label: RSS 订阅地址（选填）
+    - type: checkboxes
+      id: confirm
+      attributes:
+        label: 确认
+        options:
+          - label: 我已在自己的网站添加了 Elowen's Space 的友情链接
+            required: true
+          - label: 我的网站内容符合中国大陆法律法规
+            required: true
